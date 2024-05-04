@@ -17,8 +17,8 @@
     <title>Biarritz</title>
   </head>
 
-  <body class="min-h-screen bg-stone-100 p-8 text-slate-950">
-    <div class="container min-h-screen rounded-xl bg-slate-200">
+  <body class="min-h-screen bg-stone-50 p-2 text-slate-950 sm:p-8">
+    <div class="container rounded-xl bg-stone-100">
       <header
         class="flex items-center gap-x-3 rounded-t-xl border-b bg-white p-6"
       >
@@ -26,7 +26,9 @@
         <h1 class="text-xl font-bold">Biarritz Palace</h1>
       </header>
 
-      <main class="grid grid-cols-[2fr_1fr] grid-rows-1">
+      <main
+        class="sm: grid grid-cols-1 grid-rows-[auto_auto] sm:grid-cols-2 lg:grid-cols-[2fr_1fr] lg:grid-rows-1"
+      >
         <div class="bg-white p-6">
           <a
             class="mb-6 flex items-center gap-x-3 text-sm font-bold transition-colors hover:text-blue-500"
@@ -36,9 +38,11 @@
           >
           <h2 class="mb-4 text-lg font-bold">Moyen de paiement</h2>
 
-          <article class="rounded-lg border p-4">
+          <article class="mb-4 rounded-lg border p-6">
             <h3 class="mb-6 text-sm font-bold">Cartes sauvegardées</h3>
-            <div class="grid grid-cols-2 grid-rows-2 gap-2 p-2">
+            <div
+              class="grid grid-cols-1 grid-rows-4 gap-2 p-2 lg:grid-cols-2 lg:grid-rows-2"
+            >
               <label
                 for="paypal"
                 class="group flex cursor-pointer items-start gap-x-3 rounded-lg border p-4 transition-colors hover:bg-blue-500"
@@ -123,10 +127,108 @@
               </a>
             </div>
           </article>
+
+          <article class="rounded-lg border p-4">
+            <div class="mb-4 flex flex-col gap-y-3 border-b pb-2">
+              <h2 class="font-bold">Politique d'annulation</h2>
+              <p class="text-sm font-medium">
+                Gratuit avant le 30 octobre 2025
+              </p>
+              <p class="">
+                Après cette date, la réservation ne sera plus annulable.
+                <a
+                  href="#"
+                  class="font-semibold underline transition-colors hover:text-blue-500"
+                  >Voir les conditions.</a
+                >
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-y-3">
+              <h2 class="font-bold">Règles de la résidence</h2>
+              <p class="text-xs">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+                temporibus a nisi dignissimos quisquam aliquam.
+              </p>
+              <ul class="list-inside list-disc text-sm">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Delectus id consequatur quaerat!
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
 
-        <div class=""></div>
+        <div class="bg-stone-100 p-6">
+          <div
+            class="mb-4 flex h-52 flex-col justify-end rounded-lg bg-[url(./images/biarritz.jpg)] bg-cover bg-center py-2 text-white"
+          >
+            <div class="px-4 py-1 backdrop-brightness-50">
+              <h2 class="font-bold">Hôtel | Biarritz Palace</h2>
+              <p>6 lits &#9679; 2sdb &#9679; 3 chambres</p>
+            </div>
+          </div>
+
+          <h2 class="mb-2 border-b pb-2 font-bold">Résumé de votre commande</h2>
+
+          <div class="mb-2 flex justify-between text-sm">
+            <p>Arrivée</p>
+            <p class="font-medium">Vendredi 3 novembre 2025</p>
+          </div>
+
+          <div class="mb-2 flex justify-between text-sm">
+            <p>Départ</p>
+            <p class="font-medium">Lundi 12 novembre 2025</p>
+          </div>
+
+          <div class="mb-4 flex justify-between text-sm">
+            <p>Nombre d'invités</p>
+            <p class="font-medium">3</p>
+          </div>
+
+          <h2 class="mb-2 border-b pb-2 font-bold">
+            Détails de la facturation
+          </h2>
+
+          <div class="mb-2 flex justify-between text-sm">
+            <p>Nombre de nuits</p>
+            <p class="font-medium">9 nuits</p>
+          </div>
+
+          <div class="mb-2 flex justify-between text-sm">
+            <p>Prix par nuité</p>
+            <p class="font-medium">700€</p>
+          </div>
+
+          <div class="mb-2 flex justify-between text-sm">
+            <p>Frais de ménage</p>
+            <p class="font-medium">1200€</p>
+          </div>
+
+          <div class="mb-4 flex justify-between text-sm">
+            <p>Total</p>
+            <p class="font-medium">7500€</p>
+          </div>
+
+          <button
+            class="w-full animate-pulse rounded bg-blue-500 py-2 font-bold text-white transition-colors hover:animate-none hover:bg-blue-600"
+          >
+            Confirmer et payer 7500€
+          </button>
+        </div>
       </main>
+      <footer class="flex items-end justify-between p-6 text-xs">
+        <div class="">
+          <h2 class="mb-1 text-xl font-bold">Biarritz Palace</h2>
+          <p class="text-stone-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            aspernatur nobis.
+          </p>
+        </div>
+        <p class="text-stone-500">&copy; Biarritz Palace 2024</p>
+      </footer>
     </div>
   </body>
 </html>
